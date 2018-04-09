@@ -1,5 +1,18 @@
 /* app css stylesheet */
 
+.Futbal>.btn-info, div.panel-heading.Futbal,.Tenis>.btn-info, div.panel-heading.Tenis{
+  border-color: white;
+  color: #753c3c;
+}
+
+.Futbal>.btn-info, div.panel-heading.Futbal{
+  background-color: #6cda6e;
+}
+
+.Tenis>.btn-info, div.panel-heading.Tenis{
+  background-color: #ecbd57;
+}
+
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;

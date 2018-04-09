@@ -35,7 +35,9 @@
       'view2/view2.js',
       'components/version/version.js',
       'components/version/version-directive.js',
-      'components/version/interpolate-filter.js'
+      'components/version/interpolate-filter.js',
+      'bower_components/moment/moment.js',
+      'bower_components/angular-moment/angular-moment.js'
     ], function() {
       // when all is done, execute bootstrap angular application
       angular.bootstrap(document, ['myApp']);
@@ -43,6 +45,9 @@
   </script>
   <title>My AngularJS App</title>
   <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+<script src="bower_components/moment/moment.js"></script>
+<script src="bower_components/angular-moment/angular-moment.js"></script>
 </head>
 <body ng-cloak>
   <ul class="menu">
