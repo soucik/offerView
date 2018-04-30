@@ -63,4 +63,28 @@ angular.module('myApp.view1', ['ngRoute'])
       .success(function (offer) {
         $scope.Leagues = $scope.parseOffer(offer); // Parse respoded offer and assign it to view scope
       });
+
+      $scope.clicked = function(){
+        $scope.state = 'clickedStyle';
+      }
+
+      $(document).ready(function () {
+        var leagueDivs = $('div.leagueSport');
+        var current = 0;
+        leagueDivs.hide();
+        Fader();
+        function Fader() {
+            $(leagueDivs[current]).fadeIn('slow').delay(1000);
+            $(leagueDivs[current]).queue(function () {
+                current = current + 1;
+                if (current < leagueDivs.length) {
+                    Fader();
+                    $(this).dequeue();
+                }
+            });
+        }
+    });
+
+
+
   }]);

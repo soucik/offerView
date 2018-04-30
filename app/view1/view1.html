@@ -1,6 +1,7 @@
 <div class="container">
     <!-- Leagues inner container -->
-    <h2>Leagues: </h2>
+    <button ng-click="clicked()">leagues change</button>
+    <h2 ng-class="state">Leagues: </h2>
     <div ng-repeat="l in Leagues" class="leagueSport {{l.SportName}}">
         <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#leagueDetail{{$index}}">{{l.SportName | uppercase}} - {{l.LeagueName}}</button>
         <div id='leagueDetail{{$index}}' class="collapse">
@@ -35,6 +36,3 @@
         </div>
     </div>
 </div>
-<script>
-
-</script>
